@@ -1,0 +1,55 @@
+name: RAG Eval Gate
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Generate test set
+        run: python phase-a/generate_testset.py
+
+      - name: Run official RAGAS evaluation
+        run: python phase-a/run_eval.py --mode official-ragas
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Generate failure analysis
+        run: python phase-a/analyze_failures.py
+
+      - name: Apply metric thresholds
+        run: >
+          python scripts/eval_gate.py
+          --threshold faithfulness=0.85
+          --threshold answer_relevancy=0.80
+          --threshold context_precision=0.70
+          --threshold context_recall=0.75
+
+      - name: Upload eval artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ragas-report
+          path: |
+            phase-a/testset_v1.csv
+            phase-a/testset_review_notes.md
+            phase-a/ragas_results.csv
+            phase-a/ragas_summary.json
+            phase-a/failure_analysis.md
+            phase-a/eval_gate_report.md
