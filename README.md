@@ -73,6 +73,3 @@ Full-corpus retrieval with phrase boosts improved context precision and recall d
 
 Guardrails are cheap relative to generation latency when implemented as local regex/topic/injection checks and run concurrently. Output safety can use Llama Guard 3 through Groq when available, while the offline classifier keeps tests reproducible without GPU access.
 
-## Demo Video
-
-Demo recording is not included. Use `demo/demo_script.md` as the 5-minute recording checklist.
