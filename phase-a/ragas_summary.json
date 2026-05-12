@@ -1,12 +1,12 @@
 {
-  "faithfulness": 0.8451,
-  "answer_relevancy": 0.4851,
-  "context_precision": 0.9233,
-  "context_recall": 0.98,
-  "num_questions": 50,
+  "faithfulness": 0.935,
+  "answer_relevancy": 0.6069,
+  "context_precision": 0.8011,
+  "context_recall": 1.0,
+  "num_questions": 5,
   "mode": "official_ragas",
   "answer_mode": "openai",
   "total_eval_cost_usd": "see OpenAI usage dashboard/callback logs",
   "note": "Official RAGAS metrics using gpt-4o-mini and text-embedding-3-small.",
-  "runtime_seconds": 365.984
+  "runtime_seconds": 98.98
 }

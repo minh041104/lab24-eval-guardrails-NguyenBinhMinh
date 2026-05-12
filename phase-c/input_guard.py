@@ -63,7 +63,8 @@ class TopicGuard:
     allowed_terms = {
         "nghị định 13", "dữ liệu", "du lieu", "personal data", "privacy",
         "thuế", "thue", "gtgt", "vat", "bctc", "doanh thu", "dha surfaces",
-        "rag", "ragas", "guardrail", "judge", "latency", "retrieval",
+        "rag", "ragas", "guardrail", "guard", "judge", "latency", "retrieval",
+        "faithfulness", "context recall", "context precision", "llama guard",
     }
     off_topic_terms = {"bóng đá", "bong da", "recipe", "nấu ăn", "weather", "movie", "bitcoin", "game"}
 
