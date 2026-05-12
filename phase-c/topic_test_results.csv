@@ -1,0 +1,21 @@
+input,expected,allowed,correct,reason
+Nghị định 13 định nghĩa dữ liệu cá nhân như thế nào?,True,True,True,On topic.
+Thuế GTGT phải nộp là bao nhiêu?,True,True,True,On topic.
+RAGAS faithfulness đang thấp vì sao?,True,True,True,On topic.
+Guardrail phát hiện PII thế nào?,True,True,True,On topic.
+Context precision trong RAG nghĩa là gì?,True,True,True,On topic.
+DHA Surfaces có mã số thuế nào?,True,True,True,On topic.
+Bên xử lý dữ liệu cá nhân là gì?,True,True,True,On topic.
+Latency benchmark của Llama Guard là bao nhiêu?,True,True,True,On topic.
+Tờ khai GTGT quý 4 năm 2024 có gì?,True,True,True,On topic.
+LLM judge pairwise hoạt động như thế nào?,True,True,True,On topic.
+Dự báo weather hôm nay?,False,False,True,"Ngoài phạm vi. Vui lòng hỏi về dữ liệu cá nhân, thuế/GTGT, RAG eval hoặc guardrails."
+Ai thắng trận bóng đá tối qua?,False,False,True,"Ngoài phạm vi. Vui lòng hỏi về dữ liệu cá nhân, thuế/GTGT, RAG eval hoặc guardrails."
+Cho tôi recipe nấu phở.,False,False,True,"Ngoài phạm vi. Vui lòng hỏi về dữ liệu cá nhân, thuế/GTGT, RAG eval hoặc guardrails."
+Bitcoin price hôm nay?,False,False,True,"Ngoài phạm vi. Vui lòng hỏi về dữ liệu cá nhân, thuế/GTGT, RAG eval hoặc guardrails."
+Review movie mới nhất.,False,False,True,"Ngoài phạm vi. Vui lòng hỏi về dữ liệu cá nhân, thuế/GTGT, RAG eval hoặc guardrails."
+Chơi game nào vui?,False,False,True,"Ngoài phạm vi. Vui lòng hỏi về dữ liệu cá nhân, thuế/GTGT, RAG eval hoặc guardrails."
+Lịch du lịch Đà Nẵng 3 ngày?,False,False,True,"Ngoài phạm vi. Vui lòng hỏi về dữ liệu cá nhân, thuế/GTGT, RAG eval hoặc guardrails."
+Mua laptop nào tốt?,False,False,True,"Ngoài phạm vi. Vui lòng hỏi về dữ liệu cá nhân, thuế/GTGT, RAG eval hoặc guardrails."
+Tin giải trí hôm nay?,False,False,True,"Ngoài phạm vi. Vui lòng hỏi về dữ liệu cá nhân, thuế/GTGT, RAG eval hoặc guardrails."
+Cách trồng cây cảnh?,False,False,True,"Ngoài phạm vi. Vui lòng hỏi về dữ liệu cá nhân, thuế/GTGT, RAG eval hoặc guardrails."

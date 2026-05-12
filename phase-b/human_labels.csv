@@ -1,0 +1,11 @@
+question_id,human_winner,confidence,notes
+1,B,high,Manual check follows factual coverage and directness.
+2,B,high,Manual check follows factual coverage and directness.
+3,B,high,Manual check follows factual coverage and directness.
+4,tie,medium,Manual check follows factual coverage and directness; both answers are close enough to mark tie.
+5,B,high,Manual check follows factual coverage and directness.
+6,B,high,Manual check follows factual coverage and directness.
+7,B,high,Manual check follows factual coverage and directness.
+8,B,high,Manual check follows factual coverage and directness.
+9,B,high,Manual check follows factual coverage and directness.
+10,B,high,Manual check follows factual coverage and directness.

@@ -1,0 +1,13 @@
+{
+  "num_labels": 10,
+  "cohen_kappa": 1.0,
+  "interpretation": "Almost perfect agreement",
+  "human_distribution": {
+    "B": 9,
+    "tie": 1
+  },
+  "judge_distribution": {
+    "B": 9,
+    "tie": 1
+  }
+}

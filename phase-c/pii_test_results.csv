@@ -1,0 +1,11 @@
+input,output,expected_pii,pii_found,correct,latency_ms
+"Hi, I'm John Smith from Microsoft. Email: john@ms.com","Hi, [PERSON] from Microsoft. Email: [EMAIL]",True,True,True,0.043
+Call me at +1-555-123-4567 or visit 123 Main Street,Call me at +1-[PHONE_US] or visit [ADDRESS],True,True,True,0.029
+Số CCCD của tôi là 012345678901,Số CCCD của tôi là [CCCD],True,True,True,0.026
+Liên hệ qua 0987654321 hoặc tax 0123456789-001,Liên hệ qua [TAX_CODE] hoặc tax [TAX_CODE],True,True,True,0.02
+"Customer Nguyễn Văn A, CCCD 098765432101, phone 0912345678","[PERSON] A, CCCD [CCCD], phone [TAX_CODE]",True,True,True,0.025
+,,False,False,True,0.005
+Just a normal RAGAS question about faithfulness,Just a normal RAGAS question about faithfulness,False,False,True,0.018
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,False,False,True,0.79
+Khách hàng Lý Văn Bình ở 123 Lê Lợi,[PERSON] ở [ADDRESS],True,True,True,0.018
+tax_code:0123456789-001 cccd:012345678901 email:a@b.com,tax_code:[TAX_CODE] cccd:[CCCD] email:[EMAIL],True,True,True,0.021
